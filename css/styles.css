@@ -1,0 +1,283 @@
+
+body {
+    background-color: black
+}
+
+<img src="img/favicon.png" style="float: left"> {
+    background-color:  aqua;
+}
+
+.top-bar {
+    background-color: darkblue;
+}
+
+html,body
+{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+html {
+    scrollbar-face-color: #2c2c2c;
+  scrollbar-base-color: #2c2c2c;
+  scrollbar-3dlight-color: #2c2c2c;
+  scrollbar-highlight-color: #2c2c2c;
+  scrollbar-track-color: #000;
+  scrollbar-arrow-color: #000;
+  scrollbar-shadow-color: #2c2c2c;
+  scrollbar-dark-shadow-color: #2c2c2c;
+}
+
+::-webkit-scrollbar { width: 8px; height: 3px;}
+::-webkit-scrollbar-button {  background-color: #2c2c2c; }
+::-webkit-scrollbar-track {  background-color: #646464;}
+::-webkit-scrollbar-track-piece { background-color: #000;}
+::-webkit-scrollbar-thumb { height: 50px; background-color: #464646; border-radius: 3px;}
+::-webkit-scrollbar-corner { background-color: #2c2c2c;}}
+::-webkit-resizer { background-color: #2c2c2c;}
+
+.curtain-menu {
+  z-index: 2;
+  position: relative;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  pointer-events: none;
+}
+
+.curtain-menu-wrapper {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+          transform: translateY(-100%);
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  transition-delay: 0.5s;
+  visibility: hidden;
+}
+
+.curtain-menu-wrapper .curtain-menu-list li {
+  width: 100%;
+  font-weight: 100;
+  font-size: 2.8125rem;
+  min-height: 2.8125rem;
+  padding: 1rem;
+  text-align: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  transition: all 0.2s ease-in;
+}
+
+.curtain-menu-wrapper .curtain-menu-list li:hover {
+  background: rgba(254, 254, 254, 0.7);
+}
+
+.curtain-menu-wrapper .curtain-menu-list li:hover a {
+  color: #1779ba;
+}
+
+.curtain-menu-wrapper .curtain-menu-list li a {
+  color: #fefefe;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.curtain-menu .curtain {
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  transition: -webkit-flex 0.45s;
+  transition: flex 0.45s;
+  transition: flex 0.45s, -webkit-flex 0.45s, -ms-flex 0.45s;
+}
+
+.curtain-menu .curtain:nth-child(2) {
+  -webkit-flex: 1 0 100%;
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%;
+  background: transparent;
+}
+
+.curtain-menu .curtain:nth-child(odd) {
+  background: rgb(30,30,30);
+}
+
+.curtain-menu-button {
+/*  position: absolute;*/
+  top: 1.25rem;
+  right: 1.25rem;
+  z-index: 5;
+    text-align: center;
+}
+
+.curtain-menu-button-toggle {
+  width: 80%;
+  height: 2rem;
+  border-radius: 5000px;
+  background: #fefefe;
+  position: relative;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+    width: 15%;
+text-align: center;
+    display: inline-flex;
+}
+
+.curtain-menu-button-toggle div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 16px;
+  height: 3px;
+  background: #1779ba;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  transition-delay: 0.5s;
+}
+
+.curtain-menu-button-toggle .bar1 {
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+      -ms-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+          transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+}
+
+.curtain-menu-button-toggle .bar2 {
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(-180deg);
+      -ms-transform: translateX(-50%) translateY(-50%) rotate(-180deg);
+          transform: translateX(-50%) translateY(-50%) rotate(-180deg);
+}
+
+.curtain-menu-button-toggle:hover {
+  background: #1779ba;
+}
+
+.curtain-menu-button-toggle:hover div {
+  background: #fefefe;
+}
+
+.curtain-menu-button-toggle:active {
+  box-shadow: none;
+}
+
+.curtain-menu-open .curtain:nth-child(2) {
+  -webkit-flex: 0 0 0%;
+      -ms-flex: 0 0 0%;
+          flex: 0 0 0%;
+}
+
+.curtain-menu-open .curtain-menu-wrapper {
+  -webkit-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+          transform: translateY(0%);
+  visibility: visible;
+  pointer-events: all;
+}
+
+.curtain-menu-open .curtain-menu-button-toggle .bar1 {
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+      -ms-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+          transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+}
+
+.curtain-menu-open .curtain-menu-button-toggle .bar2 {
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(-135deg);
+      -ms-transform: translateX(-50%) translateY(-50%) rotate(-135deg);
+          transform: translateX(-50%) translateY(-50%) rotate(-135deg);
+}
+
+
+
+
+
+.curtain-menu-list {
+    width: 100%;
+}
+
+.top-bar-title {
+    display: block;
+    text-align: center;
+}
+
+.top-bar {
+    display: block;
+    text-align: center;
+}
+
+.top-bar-title {
+    float: left
+}
+
+
+
+
+
+#titlebar {
+    width: 20%;
+    display: inline-block;
+    text-align: center;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+#example-menu {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+#logo {
+    float: none;
+    padding-right: 2%;
+    padding-bottom: 0.5em;
+    max-width: 15%;
+    max-height: auto;
+}
+
+#title {
+    text-align: center;
+    display: inline-block;
+    float: none;
+    font-family: fantasy;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-size: 1.5em
+}
+
+

@@ -1,0 +1,61 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation Sandbox</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles2.scss">
+</head>
+
+<body>
+    <!--     TYPOGRAPHY   -->
+<div class="top-bar" id="example-menu">
+    <div id="titlebar">
+    <img src="img/favicon.png" id="logo">
+    <div class="top-bar-title" id="title">Nick's Cool Stuff</div>
+    </div>
+</div>
+
+
+<!-- the trigger -->
+<div class="curtain-menu-button" data-curtain-menu-button>
+  <div class="curtain-menu-button-toggle">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+  </div>
+</div>
+
+<!-- the menu  -->
+<div class="curtain-menu">
+  <div class="curtain"></div>
+  <div class="curtain"></div>
+  <div class="curtain"></div>
+  <div class="curtain-menu-wrapper">
+    <ul class="curtain-menu-list menu vertical">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="http://blog.nickscoolstuff.com">Blog</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+</div>
+
+
+
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+    <script>$('[data-curtain-menu-button]').click(function(){
+  $('body').toggleClass('curtain-menu-open');
+})
+
+</script>
+</body>
+</html>
