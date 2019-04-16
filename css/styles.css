@@ -39,15 +39,16 @@ html {
 ::-webkit-resizer { background-color: #2c2c2c;}
 
 .curtain-menu {
-  z-index: 2;
-  position: relative;
+  z-index: 5000;
+  position: absolute;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-align-items: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-  overflow: hidden;
+  overflow-x: hidden;
+    overflow-y: hidden;
   height: 100vh;
   width: 100vw;
   pointer-events: none;
@@ -266,7 +267,7 @@ text-align: center;
     float: none;
     padding-right: 2%;
     padding-bottom: 0.5em;
-    max-width: 15%;
+    max-width: 40%;
     max-height: auto;
 }
 
@@ -281,3 +282,8 @@ text-align: center;
 }
 
 
+
+.menu-wrapper {
+    position: relative;
+
+}
