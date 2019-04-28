@@ -107,7 +107,7 @@ b.max-bold{ font-weight: 700; }
 3. HEADER
 --------------------------------- */
 
-header{ position: absolute; top: initial; left: 0; right: 0; bottom: 0; z-index: 1000; }
+header{ top: 0; left:0 ; right: 0 ; bottom: 0 ; z-index: 1000; }
 
 header .heading-wrapper{ border-radius: 5px; padding: 10px 50px 0px; background: #292b2c; color: #fff; border: black solid 2px}
 
