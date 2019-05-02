@@ -289,3 +289,11 @@ text-align: center;
 }
 
 
+
+#contactlink {
+    color: rgb(215, 38, 56);
+}
+
+#contactlink:hover {
+    color: #FFA804;
+}
