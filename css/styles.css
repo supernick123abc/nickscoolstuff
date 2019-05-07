@@ -19,6 +19,8 @@ html,body
     overflow-x: hidden;
 }
 
+.hidden { display: none; color: red; }
+
 html {
     scrollbar-face-color: #2c2c2c;
   scrollbar-base-color: #2c2c2c;
@@ -296,4 +298,16 @@ text-align: center;
 
 #contactlink:hover {
     color: #FFA804;
+}
+
+
+
+#clearBox {
+    width: 600px;
+    height: 500px;
+    display: block;
+    margin-top: -500px;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
 }
