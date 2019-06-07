@@ -3,10 +3,6 @@ body {
     background-color: black;
 }
 
-<img src="img/favicon.png" style="float: left"> {
-    background-color:  aqua;
-}
-
 .top-bar {
     background-color: darkblue;
 }
@@ -298,7 +294,7 @@ text-align: center;
 }
 
 #contactlink:hover {
-    color: #FFA804;
+    color: #2179ba;
 }
 
 
@@ -312,5 +308,3 @@ text-align: center;
     position: relative;
     z-index: 1;
 }
-
-

@@ -736,7 +736,26 @@ button {
 
 
 
+
+
+
+
+
+
 .thumbs {
-  height: 50%;
-  width: 50%;
+    border: solid red 5px;
 }
+
+div + a + div + img {
+    width: 50%;
+}
+
+img {
+    
+}
+
+footer {
+    display: none;
+}
+
+
